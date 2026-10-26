@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ender Dragon: The End</title>
+<link rel="stylesheet" href="ender_dragon_3d_game.css">
+</head>
+<body>
+<div id="hud">
+  <div id="stats" class="panel">
+    <div><b>Netherite Warrior</b></div>
+    <div>Health</div><div class="bar"><div id="playerHealthBar"></div></div>
+    <div style="margin-top:8px">Ender Dragon</div><div class="bar"><div id="dragonBar"></div></div>
+    <div style="margin-top:8px">Crystals: <span id="crystals">3</span> &nbsp; Score: <span id="score">0</span></div>
+    <div style="margin-top:6px">Time: <span id="timer">00:00</span></div>
+  </div>
+  <button id="restartHud">RESTART</button>
+  <div id="crosshair"></div>
+  <div id="message"></div>
+  <div id="help">W: forward &nbsp;|&nbsp; S: backward &nbsp;|&nbsp; A/D: strafe &nbsp;|&nbsp; Hold RIGHT MOUSE + move mouse: turn &nbsp;|&nbsp; LEFT CLICK: fire arrow &nbsp;|&nbsp; Shift: sprint &nbsp;|&nbsp; R: restart</div>
+</div>
+
+<div id="start">
+  <div class="card">
+    <h1>THE END</h1>
+    <div class="sub">
+      <b style="display:block;color:#ffe66d;font-size:22px;margin-bottom:18px;text-shadow:0 0 14px #ff9d00">TRY TO COMPLETE THE LEVEL IN 45 SECONDS!</b>
+      Defeat the Ender Dragon.<br><br>
+      Destroy all <b>3 healing crystals</b> first so the dragon cannot regenerate.
+      Dodge fireballs and dragon charges, then land arrows on the dragon.
+    </div>
+    <button id="startBtn">ENTER THE END</button>
+    <div class="small">Right-click and move the mouse to look around. Press Esc to release the mouse.</div>
+  </div>
+</div>
+
+<div id="endScreen">
+  <div class="card">
+    <h1 id="endTitle">VICTORY!</h1>
+    <div class="sub" id="endText"></div>
+    <button id="restartBtn">PLAY AGAIN</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="ender_dragon_3d_game.js"></script>
+</body>
+</html>
